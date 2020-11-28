@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-project1'`, () => {
+  it(`should have as title 'angular-project2'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-project1');
+    expect(app.title).toEqual('angular-project2');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-project1 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-project2 app appcompspects is running!');
   });
 });
